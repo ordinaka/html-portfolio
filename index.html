@@ -3,13 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <titleo>project</titleo>
+    <title>Sign Up Form And Login Form</title>
+    <script src="https://kit.fontawesome.com/e15699725b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>LEARNING CSS</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum molestiae enim, maxime odio recusandae reiciendis autem ullam quas eum totam. Beatae commodi odit autem, laudantium in ut debitis tempora esse!</p>
-    <br>
-    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eius placeat, veritatis illum assumenda, aut sit ipsa dolor eum perspiciatis laborum, nostrum incidunt eaque ea est eos dolore impedit. Nisi?</P>
+    <!--this div is the colored background-->
+    <div class="container">
+    <!--this div is the colored white container that hold everything-->
+     <div class="form-box">
+        <!--the title heading-->
+        <h2 id="title">Sign Up</h2>
+        <form>
+            <div class="input-group">
+                <!--this div contain each input type text element-->
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <!--this div contain each input type email-->
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <!--this div contain each input type password element-->
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <p>Forget Password <a href="#">Click Here?</a></p>
+                
+            </div>
+            <!--the div element contain the button-->
+            <div class="button-field">
+                <button type="button" id="signupBtn">Sign Up</button>
+                <button type="button" id="signinBtn"  class="disable">Sign In</button>
+            </div>
+            
+        </form>
+
+     </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
